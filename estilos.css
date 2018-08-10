@@ -1,0 +1,289 @@
+body{
+  background-color: black;
+  font-family: "dancing"
+}
+/* tipografia */
+@font-face {
+  font-family: dancing;
+  src: url(../fuente/DancingScript-Regular.otf);
+}
+
+/* cabecera */
+header{
+  background: #5b7989;
+  width: 90%;
+  margin: auto;
+  text-shadow: 2px #02010a;
+  border: 1px solid #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+header .logo{
+  color: white;
+  float: left;
+  line-height:100px;
+  font-size: 50px
+}
+
+header nav{
+  float:right;
+  line-height: 100px;
+}
+
+nav a{
+  text-decoration: underline;
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+}
+
+#inicio{
+  text-decoration: none;
+}
+header a:hover{
+  cursor: pointer;
+}
+
+
+/* imagen central */
+
+.central{
+  background-color: #82c3a6;
+  width: 90%;
+margin: auto;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+ .central img{
+   width: 75%;
+
+   margin: auto;
+   display: block;
+   padding: none;
+   border:1px solid black;
+ }
+/* contenido */
+.content{
+  width: 900px;
+display: block;
+}
+
+/* imagen Secundaria */
+
+figure {
+	text-align: center;
+	margin: auto;
+    text-decoration: underline;
+}
+
+
+  .secundaria{
+    width:90%;
+    margin:auto;
+    background-color: #d5c75f ;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+  }
+
+  div [class*="imagen"]{
+    padding: 10px;
+    flex: 1 2 40%;
+  }
+
+.secundaria img{
+  border:1px solid black;
+  margin:20px;
+}
+
+  #imagen1 img figcaption{
+    order: 1;
+    float: left;
+    width:45%;
+
+  }
+
+  #imagen2 img figcaption{
+    order: 2;
+    float: right;
+    width:45%;
+
+  }
+
+  #imagen1 img:hover{
+    -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+    transform: rotate(10deg);
+  }
+
+  #imagen2 img:hover{
+    -webkit-transform: translate(20px,-5px); /* Chrome, Safari, Opera */
+    transform: translate(20px, -5px);
+  }
+
+  /* pie de pagina */
+  footer{
+    width: 90%;
+    background-color: #C6d5c5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+  	padding: 2%;
+    margin:auto;
+    display: flex;
+  }
+
+  footer img{
+    width: 10%;
+  }
+
+  	#contacto
+  	{
+  	background-color: #C6d5c5;
+  	width: 20%;
+    float: left;
+  	}
+  	#terminos
+  	{
+  	background-color: #C6d5c5;
+  	width: 20%;
+    float: left;
+  	}
+  	#redes
+  	{
+  	background-color: #C6d5c5;
+  	width: 20%;
+    float: left;
+  	}
+    #derechos
+  	{
+  	background-color: #C6d5c5;
+  	width: 20%;
+    float:  left;
+  	}
+
+    @media screen and (max-width: 960px){
+
+    	body
+    	{
+    		width: 90%;
+    		margin: 0 auto;
+    	}
+      footer
+    	{
+    		width: 90%;
+    		margin: 0 auto;
+    	}
+    }
+
+    @media screen and (max-width: 640px){
+
+    	body
+    	{
+    		width: 90%;
+    		margin: 0 auto;
+    	}
+      footer
+    	{
+    		width: 90%;
+    		margin: 0 auto;
+    	}
+    }
+
+
+  @media screen and (max-width: 900px){
+    .footer
+      {
+        width: 90%;
+        margin: 0 auto;
+      }
+  .contenido
+  	{
+  		width: 90%;
+  		margin: 0 auto;
+  	}
+  	#contacto
+  	{
+  	width: 90%;
+  	}
+  	#terminos
+  	{
+  	width: 90%;
+  	}
+  	#redes
+  	{
+  	width: 90%;
+  	}
+    #derechos
+  	{
+  	width: 90%;
+  	}
+  	header
+  	{
+  	width:90%;
+  	}
+  }
+
+
+
+@media only screen and (max-width: 900px) {
+    /* para movil */
+    header {
+        width: 100%;
+    }
+    header nav{
+      float: none;
+      text-align: center;
+    }
+    header .logo{
+      float: none;
+      text-align: center;
+    }
+    .contenido{
+        width: 100%;
+    }
+    .central{
+        width: 100%;
+    }
+    .secundaria{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+}
+
+
+/* animacion */
+
+header {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-top:150%;
+  }
+
+  to {
+    margin-top:100%;
+  }
+  from {
+    margin-top:100%;
+  }
+
+  to {
+    margin-top:60%;
+  }
+  from{
+    margin-top: 60%;
+  }
+
+  to {
+    margin-top:-5%;
+  }
+
+}
